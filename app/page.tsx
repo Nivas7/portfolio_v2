@@ -10,12 +10,13 @@ import { FaXTwitter } from "react-icons/fa6";
 import { SocialLinks } from "@/lib/constants";
 import { Experience, experience } from "@/data/experience";
 import * as motion from "motion/react-client"
+import { easeInOut } from "motion" // Import the easing function
 
 export default function Home() {
   const transition = {
     duration: 0.2,
     delay: 0.4,
-    ease: [0, 0.71, 0.2, 1.01],
+    ease: easeInOut, // Use the imported easing function
   }
   return (
     <motion.main initial={{ filter: "blur(15px)", y: 20 }} animate={{ filter: "blur(0px)", opacity: 1, y: 0 }} transition={transition} className="opacity-0">
