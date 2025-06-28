@@ -15,7 +15,7 @@ import { easeInOut } from "motion" // Import the easing function
 export default function Home() {
   const transition = {
     duration: 0.2,
-    delay: 0.4,
+    delay: 0.1,
     ease: easeInOut, // Use the imported easing function
   }
   return (
