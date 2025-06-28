@@ -10,6 +10,7 @@
     "prod": "next build && next start"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "@vercel/og": "^0.6.8",
     "motion": "^12.4.10",
     "next": "15.2.0",
