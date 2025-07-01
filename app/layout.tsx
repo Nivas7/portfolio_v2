@@ -4,7 +4,6 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { jura } from "@/fonts/jura";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/Footer";
-import { PostHogProvider } from "./providers";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
