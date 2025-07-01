@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={`${jura.className} antialiased`}>
         <MaxWidthWrapper>
           <Navbar />
-          <PostHogProvider>{children}</PostHogProvider>
+          {children}
           <Footer />
         </MaxWidthWrapper>
         <Analytics />

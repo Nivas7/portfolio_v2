@@ -3,7 +3,7 @@ import { CiMail } from "react-icons/ci";
 import { FaGithub, FaInstagram, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SocialLinks } from "@/lib/constants";
-import * as motion from "motion/react-client"; // Correct import for Framer Motion
+import * as motion from "motion/react-client";
 
 export default function Contact() {
   return (

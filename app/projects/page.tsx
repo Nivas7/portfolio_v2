@@ -11,7 +11,7 @@ export default function Projects() {
       transition={{
         duration: 0.2,
         delay: 0.1,
-        ease: [0, 0.71, 0.2, 1.01], // Use array for cubic-bezier
+        ease: [0, 0.71, 0.2, 1.01],
       }}
     >
       <div className="flex flex-wrap">

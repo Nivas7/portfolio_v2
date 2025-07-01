@@ -16,7 +16,7 @@ export default function Home() {
   const transition = {
     duration: 0.2,
     delay: 0.1,
-    ease: easeInOut, // Use the imported easing function
+    ease: easeInOut,
   }
   return (
     <motion.main initial={{ filter: "blur(15px)", y: 20 }} animate={{ filter: "blur(0px)", opacity: 1, y: 0 }} transition={transition} className="opacity-0">
