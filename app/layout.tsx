@@ -9,6 +9,22 @@ import { Analytics } from "@vercel/analytics/next";
 export const metadata: Metadata = {
   title: "Srinivas",
   description: "Personal Portfolio of Srinivas",
+  openGraph: {
+    title: "Srinivas",
+    description: "Personal Portfolio of Srinivas",
+    url: "https://nivas-portfolio-v2.vercel.app/", // Replace with your actual domain
+    siteName: "Srinivas Portfolio",
+    images: [
+      {
+        url: "https://nivas-portfolio-v2.vercel.app//api/og", // Replace with your actual OG image URL
+        width: 1200,
+        height: 630,
+        alt: "Srinivas Portfolio OG Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  }
 };
 
 export default function RootLayout({
