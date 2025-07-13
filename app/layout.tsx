@@ -12,11 +12,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Srinivas",
     description: "Personal Portfolio of Srinivas",
-    url: "https://nivas-portfolio-v2.vercel.app/", // Replace with your actual domain
+    url: "https://nivas-portfolio-v2.vercel.app/",
     siteName: "Srinivas Portfolio",
     images: [
       {
-        url: "https://nivas-portfolio-v2.vercel.app//api/og", // Replace with your actual OG image URL
+        url: "https://nivas-portfolio-v2.vercel.app//api/og",
         width: 1200,
         height: 630,
         alt: "Srinivas Portfolio OG Image",
