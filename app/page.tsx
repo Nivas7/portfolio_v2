@@ -5,21 +5,32 @@ import nivaz from "@/public/nivaz.jpg";
 import Link from "next/link";
 import { projects } from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
-import { FaGithub, FaInstagram, FaLinkedin, FaDiscord, FaReddit } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaDiscord,
+  FaReddit,
+} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SocialLinks } from "@/lib/constants";
 import { Experience, experience } from "@/data/experience";
-import * as motion from "motion/react-client"
-import { easeInOut } from "motion" // Import the easing function
+import * as motion from "motion/react-client";
+import { easeInOut } from "motion"; // Import the easing function
 
 export default function Home() {
   const transition = {
     duration: 0.2,
     delay: 0.1,
     ease: easeInOut,
-  }
+  };
   return (
-    <motion.main initial={{ filter: "blur(15px)", y: 20 }} animate={{ filter: "blur(0px)", opacity: 1, y: 0 }} transition={transition} className="opacity-0">
+    <motion.main
+      initial={{ filter: "blur(15px)", y: 20 }}
+      animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
+      transition={transition}
+      className="opacity-0"
+    >
       {/* About me Section */}
       <div className="pt-10 flex gap-10 sm:flex-row flex-col">
         <div className="flex items-center justify-center">
@@ -37,8 +48,8 @@ export default function Home() {
           </h1>
 
           <p className="">
-            I am a New Grad CS student who loves building apps and websites
-            that are useful.{" "}
+            I am a New Grad CS student who loves building apps and websites that
+            are useful.{" "}
           </p>
           <p className="">
             I am very active on{" "}
@@ -139,11 +150,12 @@ export default function Home() {
       {/* Projects section */}
       <div className="flex flex-wrap">
         {projects.slice(0, 4).map((project) => (
-          <ProjectCard
-            project={project}
-            className=" md:w-1/2 sm:w-1/2 w-full"
+          <div
             key={project.title}
-          />
+            className="w-full sm:w-1/2 md:w-1/2 px-4 mb-8"
+          >
+            <ProjectCard project={project} />
+          </div>
         ))}
         <div className="w-full flex justify-center p-4">
           <Link
